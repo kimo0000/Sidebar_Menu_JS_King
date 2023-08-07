@@ -1,0 +1,96 @@
+*, ::after, ::before {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #222;
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    padding: 0 15px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100vh
+}
+
+.sidebar {
+    position: relative;
+    width: 35%;
+    height: 100%;
+    background-color: #fff;
+    color: #000;
+    padding: 25px 0px;
+    transform: translateX(-110%);
+    transition: .3s;
+}
+
+.sidebar.show_menu {
+    transform: translateX(0%);
+}
+
+.side_content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#btn_close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 8px;
+    border-radius: 8px;
+    background-color: #f50;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.logo {
+    padding: 10px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+ul li {
+    transition: .3s;
+    padding: 10px;
+}
+
+ul li:hover {
+    background-color: red;
+    color: #fff;
+}
+
+.menu {
+    padding: 10px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.active {
+    width: fit-content;
+    padding: 2px;
+    border: 2px solid #ddd;
+    color: red;
+}
